@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact C3Techie - Get in touch">
+  <title>Contact - C3Techie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo" aria-label="C3Techie home">
+        <span class="logo-text">C3Techie</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link" data-page="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link" data-page="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link active" data-page="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <article class="contact-card">
+      <header class="contact-header">
+        <h1>Get In Touch</h1>
+        <p class="contact-subtitle">I'd love to hear from you. Send me a message!</p>
+      </header>
+
+      <!-- Success Message -->
+      <div class="success-message" id="successMessage" data-testid="test-contact-success" role="alert" aria-live="polite" style="display: none;">
+        <span class="success-icon">✓</span>
+        <div>
+          <strong>Message sent successfully!</strong>
+          <p>Thank you for reaching out. I'll get back to you soon.</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" id="contactForm" novalidate>
+        <!-- Name Field -->
+        <div class="form-group">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input 
+            type="text" 
+            id="fullName" 
+            name="fullName"
+            class="form-input"
+            data-testid="test-contact-name"
+            placeholder="Your full name"
+            required
+            aria-describedby="nameError"
+          >
+          <span class="error-message" id="nameError" data-testid="test-contact-error-name" role="alert"></span>
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email"
+            class="form-input"
+            data-testid="test-contact-email"
+            placeholder="your.email@example.com"
+            required
+            aria-describedby="emailError"
+          >
+          <span class="error-message" id="emailError" data-testid="test-contact-error-email" role="alert"></span>
+        </div>
+
+        <!-- Subject Field -->
+        <div class="form-group">
+          <label for="subject" class="form-label">Subject</label>
+          <input 
+            type="text" 
+            id="subject" 
+            name="subject"
+            class="form-input"
+            data-testid="test-contact-subject"
+            placeholder="What is this about?"
+            required
+            aria-describedby="subjectError"
+          >
+          <span class="error-message" id="subjectError" data-testid="test-contact-error-subject" role="alert"></span>
+        </div>
+
+        <!-- Message Field -->
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea 
+            id="message" 
+            name="message"
+            class="form-textarea"
+            data-testid="test-contact-message"
+            placeholder="Your message here (minimum 10 characters)"
+            rows="6"
+            required
+            aria-describedby="messageError"
+          ></textarea>
+          <span class="error-message" id="messageError" data-testid="test-contact-error-message" role="alert"></span>
+        </div>
+
+        <!-- Submit Button -->
+        <button 
+          type="submit" 
+          class="submit-button"
+          data-testid="test-contact-submit"
+        >
+          Send Message
+        </button>
+      </form>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

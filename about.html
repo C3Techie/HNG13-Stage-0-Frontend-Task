@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About C3Techie - My journey and reflections">
+  <title>About - C3Techie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo" aria-label="C3Techie home">
+        <span class="logo-text">C3Techie</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link" data-page="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link active" data-page="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container" data-testid="test-about-page">
+    <article class="about-card">
+      <header class="about-header">
+        <h1>About Me</h1>
+        <p class="about-subtitle">My journey, goals, and reflections</p>
+      </header>
+
+      <!-- Bio Section -->
+      <section class="about-section">
+        <h2 class="about-section-title">Who I Am</h2>
+        <p class="about-text" data-testid="test-about-bio">
+          I'm a passionate full-stack developer with a deep love for creating elegant, user-centered solutions. My journey in tech started with curiosity and has evolved into a commitment to building software that makes a real difference. I believe in continuous learning, clean code, and the power of collaboration.
+        </p>
+      </section>
+
+      <!-- Goals Section -->
+      <section class="about-section">
+        <h2 class="about-section-title">My Goals in This Program</h2>
+        <ul class="about-list" data-testid="test-about-goals">
+          <li class="about-list-item">Master advanced frontend and backend technologies</li>
+          <li class="about-list-item">Build production-ready applications with best practices</li>
+          <li class="about-list-item">Develop strong problem-solving and debugging skills</li>
+          <li class="about-list-item">Collaborate effectively with other developers</li>
+          <li class="about-list-item">Create a portfolio of meaningful projects</li>
+        </ul>
+      </section>
+
+      <!-- Confidence Section -->
+      <section class="about-section">
+        <h2 class="about-section-title">Areas of Low Confidence</h2>
+        <ul class="about-list" data-testid="test-about-confidence">
+          <li class="about-list-item">Advanced system design and architecture patterns</li>
+          <li class="about-list-item">Performance optimization at scale</li>
+          <li class="about-list-item">DevOps and deployment pipelines</li>
+          <li class="about-list-item">Complex database optimization</li>
+        </ul>
+      </section>
+
+      <!-- Future Note Section -->
+      <section class="about-section">
+        <h2 class="about-section-title">A Note to My Future Self</h2>
+        <blockquote class="about-quote" data-testid="test-about-future-note">
+          <p>
+            Remember that every expert was once a beginner. The challenges you face today are building blocks for tomorrow's solutions. Stay curious, embrace failures as learning opportunities, and never stop pushing your boundaries. Your dedication will compound into mastery.
+          </p>
+        </blockquote>
+      </section>
+
+      <!-- Extra Thoughts Section -->
+      <section class="about-section">
+        <h2 class="about-section-title">Extra Thoughts</h2>
+        <p class="about-text" data-testid="test-about-extra">
+          I'm excited about the intersection of technology and human experience. Whether it's building intuitive interfaces, optimizing backend systems, or mentoring others, I find fulfillment in creating value. This program is an opportunity to deepen my skills and contribute meaningfully to the tech community. I'm ready to embrace the challenge and grow alongside my peers.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
